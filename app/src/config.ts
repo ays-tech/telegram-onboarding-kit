@@ -37,7 +37,7 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_fire.tgs'), // Updated sticker
+            src: import('./assets/stickers/duck_spy.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',
@@ -66,7 +66,7 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_thumbs_up.tgs'), // Updated sticker
+            src: import('./assets/stickers/duck_money.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',

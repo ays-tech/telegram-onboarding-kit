@@ -7,9 +7,9 @@ export default defineConfig({
         // Welcome slide
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/naneed.png'), // Updated sticker
-            size: 250,
+            type: 'image',
+            src: import('./assets/stickers/naneedp.png'), // Updated sticker
+            size: 120,
           },
           shape: 'square',
           pagination: 'count',

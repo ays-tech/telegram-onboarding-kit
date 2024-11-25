@@ -16,7 +16,7 @@ export default defineConfig({
           title: 'Welcome to the World of $NANEE',
           description:
             "I AM NANEE PUMP 'THE ANCIENT FAIRY 🧚 SUN GODDESS' YOU CAN CALL ME $NANEE.",
-          button: 'Next',
+          button: 'LFG',
           links: [
             {
               text: 'Follow us on Twitter',

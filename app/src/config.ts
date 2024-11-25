@@ -8,14 +8,14 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
+            src: import('./assets/stickers/naneed.png'), // Updated sticker
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
           title: 'Welcome to the World of $NANEE',
           description:
-            "I AM NANEE PUMP 'THE ANCIENT FAIRY 🧚 SUN GODDESS' YOU CAN CALL ME $NANEE.",
+            "I AM NANEE PUMP, 'THE ANCIENT FAIRY SUN ☀ GODDESS'. <br> YOU CAN CALL ME $NANEE. <br> BUY $NANEE NOW!",
           button: 'LFG',
           links: [
             {
@@ -37,14 +37,14 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_money.tgs'),
+            src: import('./assets/stickers/duck_fire.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'The Burnt Blessing 🔥',
+          title: 'Who Is NANEE PUMP?',
           description:
-            "🔥 40% of the total supply has been burnt by the dev – no turning back! <br> 🌟 What does this mean? More value for YOU, our holders. <br> 🚀 A community-focused memecoin with scarcity baked in from Day 1!",
+            "NANEE PUMP enters the SOLANA Ecosystem via moonshot to babysit and keep the House of Memes in order, by ensuring everyone is well behaved and performing above market standards. <br> The Ancient Fairy Sun goddess resides in the Solar Kingdom and oversees the entire Sol meme-sphere with a touch of her fairy energy.",
           button: 'Next',
           links: [
             {
@@ -66,14 +66,14 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_cool.tgs'),
+            src: import('./assets/stickers/duck_thumbs_up.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Achievements in Just 48 Hours ⏳',
+          title: 'The Fairy Sun Goddess',
           description:
-            "🎉 Only 48 hours old, and here’s what $NANEE has already achieved: <br> 🌌 All-Time High Market Cap: $1.3M 🚀 <br> 👥 Over 1,500 holders joining the Fairy Goddess movement! <br> 💎 Lightning-fast growth with hype and momentum unmatched!",
+            "The Dogs, Cats, Frogs, Pigs, Monkeys, Hippos, and Chickens will now be well behaved, because the magic-wand-waving Fairy Sun Goddess is Here. <br> Inspired by Nanny Plum, a major character in 'Ben & Holly's Little Kingdom'. She is a Fairy residing in the Little Kingdom, working as a housekeeper for the Little Castle, and is also Holly's Nanny.",
           button: 'Next',
           links: [
             {
@@ -95,15 +95,15 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
+            src: import('./assets/stickers/duck_love.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Why Join the $NANEE Community?',
+          title: 'The Ultimate Solana Memecoin',
           description:
-            "🌟 A Memecoin with Magic: Fun, community, and insane potential. <br> 🔥 Hyper Deflationary: Burn mechanism ensures value rises. <br> 🌠 Community First: Transparent devs and a growing army of believers. <br> 🎮 Future Utilities: Gamification, staking, NFTs – the fairy dust keeps coming!",
-          button: 'Next',
+            "The Ultimate Solana Memecoin is here. <br> The Fairy takes center stage, and the SOLANA ecosystem will never be the same again. <br> Contract Address: GVKx1BrjdaKwcV57q6a8aJLjtbb9KtjXVfESGvopJXML <br> Copy Address and Join the Movement!",
+          button: 'Join Now',
           links: [
             {
               text: 'Follow us on Twitter',
@@ -124,73 +124,14 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
+            src: import('./assets/stickers/duck_xray.tgs'), // Updated sticker
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Our Vision and Vibe',
-          description:
-            "$NANEE is More Than a Memecoin – It’s a movement! <br> 💖 Spread positivity, embrace the hype, and chase those gains. <br> 🌟 Together, we’ll make $NANEE shine brighter than the sun!",
-          button: 'Next',
-          links: [
-            {
-              text: 'Follow us on Twitter',
-              href: 'https://twitter.com/yourtwitterhandle',
-            },
-            {
-              text: 'Check our DEX Screener',
-              href: 'https://www.dexscreener.com/yourcoin',
-            },
-            {
-              text: 'Visit our Website',
-              href: 'https://www.yourwebsite.com',
-            },
-          ],
-        },
-
-        // Are You Ready slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Are You Ready? 🌈',
-          description:
-            "🌞 Be part of history as $NANEE conquers the memecoin universe. <br> 💫 Follow us on social media, join our raids, and spread the word. <br> 🚀 Let’s pump it to the moon and beyond with $NANEE!",
-          button: 'Join Now',
-          links: [
-            {
-              text: 'Follow us on Twitter',
-              href: 'https://twitter.com/yourtwitterhandle',
-            },
-            {
-              text: 'Check our DEX Screener',
-              href: 'https://www.dexscreener.com/yourcoin',
-            },
-            {
-              text: 'Visit our Website',
-              href: 'https://www.yourwebsite.com',
-            },
-          ],
-        },
-
-        // Amazing Adventures slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'The Amazing $NANEE Adventures ✨',
-          description:
-            "🚀 $NANEE Adventures await as we journey through: <br> 🔥 Tokenomics Reimagined: Innovating the deflationary model. <br> 🎮 Gaming Ecosystem: Coming soon – play to earn and stake $NANEE! <br> 🏆 Exclusive Events & Airdrops: Stay tuned for exciting rewards as we grow!",
-          button: 'Next',
+          title: 'Find NANEE on Social Media',
+          description: "Follow NANEE PUMP on social media for the latest updates and join the $NANEE community for more amazing adventures!",
+          button: 'Explore',
           links: [
             {
               text: 'Follow us on Twitter',

@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "scripts": {
         "*** Your app ***": "",
-        "dev": "turbo run dev --scope @tok/app",
-        "build": "turbo run build --scope @tok/app",
+        "dev": "turbo run dev --scope @tok/tales",
+        "build": "turbo run build --scope @tok/tales",
         "*********************************************": "",
         "*** ai ***": "",
         "dev:ai": "turbo run dev --scope @tok/ai",

@@ -7,15 +7,14 @@ export default defineConfig({
         // Welcome slide
         {
           media: {
-            type: 'image',
-            src: import('./assets/stickers/naneedp.png'), // Updated sticker
-            size: 120,
+            type: 'video',
+            src: import('./assets/stickers/naneedp.png'), 
           },
-          shape: 'square',
+          shape: 'rounded',
           pagination: 'count',
           title: 'Welcome to the World of $NANEE',
           description:
-            "I AM NANEE PUMP, 'THE ANCIENT FAIRY SUN ☀ GODDESS'. <br> YOU CAN CALL ME $NANEE. <br> BUY $NANEE NOW!",
+            "I AM NANEE PUMP, 'THE ANCIENT FAIRY SUN ☀ GODDESS",
           button: 'LFG',
           links: [
             {

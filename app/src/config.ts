@@ -1,12 +1,10 @@
 import { defineConfig } from '@tok/generation';
 
 export default defineConfig({
-  // If you want to add language/currency localization – see ./examples/meditation as reference
-
   pages: [
     {
       slides: [
-        // intro
+        // Welcome slide
         {
           media: {
             type: 'sticker',
@@ -15,245 +13,198 @@ export default defineConfig({
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Welcome to Telegram Onboarding Kit',
+          title: 'Welcome to the World of $NANEE',
           description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
+            "I AM NANEE PUMP 'THE ANCIENT FAIRY 🧚 SUN GODDESS' YOU CAN CALL ME $NANEE.",
           button: 'Next',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
 
-        // image
-        {
-          media: {
-            type: 'image',
-            src: import('./assets/img/durov.webp'),
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Onboarding supports many types of content',
-          description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
-          button: 'Next',
-        },
-
-        // sticker
+        // Burnt Blessing slide
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
+            src: import('./assets/stickers/duck_money.tgs'), // Replace with actual sticker path
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Telegram stickers',
+          title: 'The Burnt Blessing 🔥',
           description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
+            "🔥 **40% of the total supply** has been burnt by the dev – no turning back! <br> 🌟 What does this mean? More value for YOU, our holders. <br> 🚀 A community-focused memecoin with scarcity baked in from Day 1!",
           button: 'Next',
-        },
-
-        // form
-        {
-          extends: 'form', // note, it's important to extend from 'form' here
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
-          form: [
+          links: [
             {
-              id: 'text_from_form',
-              placeholder: 'Text input',
-              type: 'text',
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
             },
             {
-              id: 'number_from_form',
-              placeholder: 'Number input',
-              type: 'number',
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
             },
             {
-              id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
-              type: 'checkbox',
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
             },
           ],
-          button: 'Next',
         },
 
-        // video
-        {
-          media: {
-            type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
-            style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Videos',
-          description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
-        },
-
-        // list
+        // Achievements slide
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Lists',
-          description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
-          list: [
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/guide.svg'),
-                size: 30,
-              },
-              text: 'Some cool feature',
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/track.svg'),
-                size: 30,
-              },
-              text: 'Some very cool feature',
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/time.svg'),
-                size: 30,
-              },
-              text: 'Some extremely cool feature',
-            },
-          ],
-          button: 'Next',
-        },
-
-        // "everything is customizable" slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
+            src: import('./assets/stickers/duck_cool.tgs'), // Replace with actual sticker path
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Everything is customizable',
-          description: '',
-          textAlign: 'center',
-          list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
-          ],
-          button: 'Super-Duper Next',
-        },
-
-        // slide with other features
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_cool.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Some other features:',
-          description: '',
-          list: [
-            'One-click 0$ <b>deploy</b> on GitHub Pages',
-            'Language and currency localization',
-            'Buttons with <b>haptic</b> feedback',
-            'Content pre-loading for high speed',
-            '<b>Low-code</b> approach to building onboardings',
-            'Many examples/presets',
-            "And many more... (see <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>GitHub</a>)",
-          ],
+          title: 'Achievements in Just 48 Hours ⏳',
+          description:
+            "🎉 Only **48 hours old**, and here’s what $NANEE has already achieved: <br> 🌌 **All-Time High Market Cap**: $1.3M 🚀 <br> 👥 **Over 1,500 holders** joining the Fairy Goddess movement! <br> 💎 Lightning-fast growth with **hype and momentum unmatched!**",
           button: 'Next',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
 
-        // go to paywall slide
+        // Why Join slide
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_knife.tgs'),
+            src: import('./assets/stickers/duck_love.tgs'), // Replace with actual sticker path
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          textAlign: 'center',
-          title: 'But onboarding slides are not enough...',
-          description: "Let's go to Paywall",
-          button: {
-            content: 'Go to Paywall',
-            to: '/paywall',
-          },
+          title: 'Why Join the $NANEE Community?',
+          description:
+            "🌟 **A Memecoin with Magic**: Fun, community, and insane potential. <br> 🔥 **Hyper Deflationary**: Burn mechanism ensures value rises. <br> 🌠 **Community First**: Transparent devs and a growing army of believers. <br> 🎮 **Future Utilities**: Gamification, staking, NFTs – the fairy dust keeps coming!",
+          button: 'Next',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
-      ],
-    },
 
-    // paywall
-    {
-      extends: 'paywall',
-      path: '/paywall',
-      media: {
-        type: 'sticker',
-        src: import('./assets/stickers/duck_money.tgs'),
-        size: 150,
-      },
-      shape: 'square',
-      title: 'Your beautiful Paywall',
-      list: [
-        'Adjustable product cards',
-        '<b>👛 Wallet Pay</b> and <b>Telegram Payments</b> ready. Add custom methods easily',
-        'Subscriptions or One-time payments',
-      ],
-      products: [
+        // Vision and Vibe slide
         {
-          id: '1_month_subscription',
-          title: '1 month subscription',
-          description: '2$/month',
-          discount: '',
-          price: 2,
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/duck_xray.tgs'), // Replace with actual sticker path
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Our Vision and Vibe',
+          description:
+            "✨ **$NANEE is More Than a Memecoin** – It’s a movement! <br> 💖 Spread positivity, embrace the hype, and chase those gains. <br> 🌟 Together, we’ll make $NANEE shine brighter than the sun!",
+          button: 'Next',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
+
+        // Are You Ready slide
         {
-          id: '1_year_subscription',
-          title: '1 year subscription',
-          description: '1$/month',
-          discount: 'Discount 50%',
-          price: 12,
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/duck_spy.tgs'), // Replace with actual sticker path
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Are You Ready? 🌈',
+          description:
+            "🌞 Be part of history as $NANEE conquers the memecoin universe. <br> 💫 Follow us on social media, join our raids, and spread the word. <br> 🚀 Let’s pump it to the moon and beyond with **$NANEE!**",
+          button: 'Join Now',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
+
+        // Amazing Adventures slide
         {
-          id: 'lifetime_access',
-          title: 'Lifetime access',
-          description: '20$ once',
-          discount: 'Best offer',
-          price: 20,
-        },
-      ],
-      mainButtonText: 'Buy for {price}',
-      popup: {
-        // popup for payment methods choice
-        type: 'web',
-      },
-      links: [
-        {
-          text: 'Privacy policy',
-          href: 'https://google.com',
-        },
-        {
-          text: 'Terms of use',
-          href: 'https://google.com',
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/duck_juggling.tgs'), // Replace with actual sticker path
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'The Amazing $NANEE Adventures ✨',
+          description:
+            "🚀 **$NANEE Adventures** await as we journey through: <br> 🔥 **Tokenomics Reimagined**: Innovating the deflationary model. <br> 🎮 **Gaming Ecosystem**: Coming soon – play to earn and stake $NANEE! <br> 🏆 **Exclusive Events & Airdrops**: Stay tuned for exciting rewards as we grow!",
+          button: 'Next',
+          links: [
+            {
+              text: 'Follow us on Twitter',
+              href: 'https://twitter.com/yourtwitterhandle', // Replace with actual Twitter handle
+            },
+            {
+              text: 'Check our DEX Screener',
+              href: 'https://www.dexscreener.com/yourcoin', // Replace with your coin's DEX screener link
+            },
+            {
+              text: 'Visit our Website',
+              href: 'https://www.yourwebsite.com', // Replace with your website link
+            },
+          ],
         },
       ],
     },

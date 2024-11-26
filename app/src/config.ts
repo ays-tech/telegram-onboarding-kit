@@ -15,23 +15,23 @@ export default defineConfig({
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Welcome to Telegram Onboarding Kit',
+          title: 'Hi there!',
           description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
-          button: 'Next',
+            "I AM 🌟 NANEE PUMP ✨<br>THE ANCIENT FAIRY 🧚‍♀️ SUN ☀️ GODDESS 🌞<br> YOU CAN CALL ME 💸 NANEE 💖",
+            button: 'Next',
         },
 
         // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/durov.webp'),
+            src: import('./assets/img/onboarding_two.webp'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Onboarding supports many types of content',
+          title: 'WHO IS NANEE PUMP',
           description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
+            "NANEE PUMP enters the SOLANA Ecosystem via moonshot to babysit and keep the House of Memes in order,<br> by ensuring everyone is well behaved and performing above market standards.<br><br> The Ancient Fairy Sun goddess resides in the Solar Kingdom and oversees the entire Sol meme-sphere with a touch of her fairy energy.",
           button: 'Next',
         },
 

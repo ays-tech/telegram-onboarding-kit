@@ -17,7 +17,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'Hi there!',
           description:
-            "I AM 🌟 NANEE PUMP ✨<br>THE ANCIENT FAIRY 🧚‍♀️ SUN GODDESS 🌞<br> YOU CAN CALL ME 💸 NANEE 💖",
+            "I AM 🌟 NANEE PUMP ✨<br><br>THE ANCIENT FAIRY 🧚‍♀️ SUN GODDESS 🌞<br><br>YOU CAN CALL ME 💸 NANEE 💖",
             button: 'Next',
         },
 

@@ -17,7 +17,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'Hi there!',
           description:
-            "I AM 🌟 NANEE PUMP ✨<br>THE ANCIENT FAIRY 🧚‍♀️ SUN ☀️ GODDESS 🌞<br> YOU CAN CALL ME 💸 NANEE 💖",
+            "I AM 🌟 NANEE PUMP ✨<br>THE ANCIENT FAIRY 🧚‍♀️ SUN GODDESS 🌞<br> YOU CAN CALL ME 💸 NANEE 💖",
             button: 'Next',
         },
 
@@ -31,63 +31,19 @@ export default defineConfig({
           pagination: 'count',
           title: 'WHO IS NANEE PUMP',
           description:
-            "NANEE PUMP enters the SOLANA Ecosystem via moonshot to babysit and keep the House of Memes in order,<br> by ensuring everyone is well behaved and performing above market standards.<br><br> The Ancient Fairy Sun goddess resides in the Solar Kingdom and oversees the entire Sol meme-sphere with a touch of her fairy energy.",
+            "NANEE PUMP enters the SOLANA Ecosystem via moonshot to babysit and keep the House of Memes in order,<br> by ensuring everyone is well behaved and performing above market standards.<br><br>",
           button: 'Next',
         },
 
-        // sticker
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Telegram stickers',
-          description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
-          button: 'Next',
-        },
 
-        // form
-        {
-          extends: 'form', // note, it's important to extend from 'form' here
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
-          form: [
-            {
-              id: 'text_from_form',
-              placeholder: 'Text input',
-              type: 'text',
-            },
-            {
-              id: 'number_from_form',
-              placeholder: 'Number input',
-              type: 'number',
-            },
-            {
-              id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
-              type: 'checkbox',
-            },
-          ],
-          button: 'Next',
-        },
-
+        
+       
         // video
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
+            src: import('./assets/videos/Video.mp4'),
+            poster: import('./assets/img/naneedp.webp'),
             style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
           },
           shape: 'rounded',

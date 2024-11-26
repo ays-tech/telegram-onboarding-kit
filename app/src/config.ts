@@ -71,7 +71,7 @@ export default defineConfig({
             type: 'video',
             src: import('./assets/img/final_onbording.gif'),
             poster: import('./assets/img/naneedp.webp'),
-            style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
+            style: 'aspect-ratio: 780/936', // here we manually set video aspect-ratio (default is 16:9)
           },
           shape: 'rounded',
           pagination: 'count',

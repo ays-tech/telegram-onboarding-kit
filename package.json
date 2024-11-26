@@ -5,7 +5,7 @@
         "*** Your app ***": "",
         "dev": "turbo run dev --scope @tok/app",
         "build": "turbo run build --scope @tok/app",
-        "*********************************************": "",
+        "**********************************************": "",
         "*** ai ***": "",
         "dev:ai": "turbo run dev --scope @tok/ai",
         "build:ai": "turbo run build --scope @tok/ai",

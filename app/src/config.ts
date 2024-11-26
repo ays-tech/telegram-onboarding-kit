@@ -64,8 +64,9 @@ export default defineConfig({
 
         {
           media: {
-            type: 'image',
+            type: 'video',
             src: import('./assets/img/onboarding_4.webp'),
+            style: 'aspect-ratio: 780/936',
           },
           shape: 'rounded',
           pagination: 'count',

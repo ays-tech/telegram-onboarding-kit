@@ -10,7 +10,7 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
+            src: import('./assets/stickers/sunmoon.tgs'),
             size: 250,
           },
           shape: 'square',

@@ -22,8 +22,8 @@ export default defineConfig({
         {
           media: {
             type: 'image',
-            src: import('./assets/img/main.png'),
-            webp: import('./assets/img/main.webp'),
+            src: import('./assets/img/naneedp.png'),
+            webp: import('./assets/img/naneedp.webp'),
             style:
               'width: min(60vw, 420px); height: min(66.5vw, 465px); margin: 0 auto',
           },

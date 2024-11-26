@@ -8,9 +8,7 @@ export default defineConfig({
       slides: [
         // intro
         {
-          
-          
-          
+
           media: {
             type: 'sticker',
             src: import('./assets/stickers/sunmoon.tgs'),
@@ -51,6 +49,22 @@ export default defineConfig({
           button: 'Next',
         },
 
+
+        {
+          media: {
+            type: 'image',
+            src: import('./assets/img/buringman.webp'),
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: 'BurningMen',
+          description: 
+            "The developer burned 40% of the total supply, boosting scarcity and value for the community. 🔥",
+          button: 'Next',
+        },
+        
+
+
         {
           media: {
             type: 'image',
@@ -90,9 +104,9 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Videos',
+          title: 'LFG',
           description:
-            "find me on social media",
+            "Hope you are ready for whats coming?",
           button: 'Next',
         },
 

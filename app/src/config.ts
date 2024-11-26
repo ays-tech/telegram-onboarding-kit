@@ -57,9 +57,24 @@ export default defineConfig({
           pagination: 'count',
           title: 'WHERE IS SHE?',
           description:
-            "The Dogs, Cats, Frogs, Pigs, Monkeys, Hippos, and Chickens will now be well behaved , because the magic-wand-waving Fairy Sun Goddess is Here.emojies too",
+            "The 🐶 Dogs, 🐱 Cats, 🐸 Frogs, 🐷 Pigs, 🐒 Monkeys, 🦛 Hippos, and 🐔 Chickens will now be well-behaved,because the magic-wand-waving 🧚‍♀️✨ Fairy Sun Goddess ☀️ is Here.",
           button: 'Next',
         },
+
+
+        {
+          media: {
+            type: 'image',
+            src: import('./assets/img/onboarding_4.webp'),
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: 'WHERE IS SHE?',
+          description:
+            "The Ultimate Solana Memecoin is here. The Fairy takes centre stage.The SOLANA ecosystem will never be the same again.",
+          button: 'Next',
+        },
+
 
 
 
@@ -70,7 +85,7 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/img/final_onbording.gif'),
-            poster: import('./assets/img/naneedp.webp'),
+            poster: import('./assets/img/final_onbording.gif'),
             style: 'aspect-ratio: 780/936', // here we manually set video aspect-ratio (default is 16:9)
           },
           shape: 'rounded',

@@ -35,6 +35,20 @@ export default defineConfig({
           button: 'Next',
         },
 
+        {
+          media: {
+            type: 'image',
+            src: import('./assets/img/onboarding_two.webp'),
+          },
+          shape: 'rounded',
+          pagination: 'count',
+          title: 'WHERE IS SHE?',
+          description:
+            "The Ancient Fairy Sun goddess resides in the Solar Kingdom and oversees the entire Sol meme-sphere with a touch of her fairy energy.",
+          button: 'Next',
+        },
+
+
 
         
        

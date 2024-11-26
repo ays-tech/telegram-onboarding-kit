@@ -10,10 +10,11 @@ export default defineConfig({
         {
           
           
+          
           media: {
             type: 'sticker',
             src: import('./assets/stickers/sunmoon.tgs'),
-            size: 300,
+            size: 350,
           },
           shape: 'square',
           pagination: 'count',
@@ -66,7 +67,7 @@ export default defineConfig({
 
         {
           media: {
-            type: 'video',
+            type: 'image',
             src: import('./assets/img/naneedp.webp'),
         
           },

@@ -9,6 +9,7 @@ export default defineConfig({
         // intro
         {
           
+          
           media: {
             type: 'sticker',
             src: import('./assets/stickers/sunmoon.tgs'),
@@ -66,8 +67,8 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/img/onboarding_4.webp'),
-            style: 'aspect-ratio: 780/936',
+            src: import('./assets/img/naneedp.webp'),
+        
           },
           shape: 'rounded',
           pagination: 'count',
@@ -94,7 +95,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'Videos',
           description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
+            "find me on social media",
           button: 'Next',
         },
 

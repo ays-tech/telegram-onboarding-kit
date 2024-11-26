@@ -8,10 +8,11 @@ export default defineConfig({
       slides: [
         // intro
         {
+          
           media: {
             type: 'sticker',
             src: import('./assets/stickers/sunmoon.tgs'),
-            size: 250,
+            size: 300,
           },
           shape: 'square',
           pagination: 'count',

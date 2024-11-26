@@ -55,7 +55,7 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'WHERE IS SHE?',
+          title: 'HERE TO STAY!',
           description:
             "The 🐶 Dogs, 🐱 Cats, 🐸 Frogs, 🐷 Pigs, 🐒 Monkeys, 🦛 Hippos, and 🐔 Chickens will now be well-behaved,because the magic-wand-waving 🧚‍♀️✨ Fairy Sun Goddess ☀️ is Here.",
           button: 'Next',
@@ -70,7 +70,7 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'WHERE IS SHE?',
+          title: 'GLOBAL?',
           description:
             "The Ultimate Solana Memecoin is here. The Fairy takes centre stage.The SOLANA ecosystem will never be the same again.",
           button: 'Next',

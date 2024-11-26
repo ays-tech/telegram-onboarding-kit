@@ -1,7 +1,7 @@
 import { defineConfig } from '@tok/generation';
 
 export default defineConfig({
-  // If you want to add language/currency localization – see ./examplest/meditation as reference
+  // If you want to add language/currency localization – see ./examples/meditation as reference
 
   pages: [
     {

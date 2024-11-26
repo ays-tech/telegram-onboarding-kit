@@ -1,261 +1,199 @@
 import { defineConfig } from '@tok/generation';
 
-export default defineConfig({
-  // If you want to add language/currency localization – see ./examples/meditation as reference
+import Story from './story/StoryExample.vue';
 
+export default defineConfig({
+  theme: 'dark',
+  locale: {
+    fallback: 'en',
+    ru: import('./locales/ru.json'),
+    en: import('./locales/en.json'),
+  },
+  definePresets: {
+    story: Story,
+  },
+  currencyConfig: {
+    currency: '_currency.value',
+    align: '_currency.align',
+  },
   pages: [
     {
       slides: [
-        // intro
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Welcome to Telegram Onboarding Kit',
-          description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
-          button: 'Next',
-        },
-
-        // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/durov.webp'),
+            src: import('./assets/img/naneedp.png'),
+            webp: import('./assets/img/naneedp.webp'),
+            style:
+              'width: min(60vw, 420px); height: min(66.5vw, 465px); margin: 0 auto',
           },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Onboarding supports many types of content',
-          description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
-          button: 'Next',
+          title: '_s1.title',
+          description: '_s1.description',
+          button: '_s1.button',
         },
-
-        // sticker
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
-            size: 250,
+            src: import('./assets/stickers/shpooky_love.tgs'),
           },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Telegram stickers',
-          description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
-          button: 'Next',
-        },
-
-        // form
-        {
-          extends: 'form', // note, it's important to extend from 'form' here
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
-          form: [
-            {
-              id: 'text_from_form',
-              placeholder: 'Text input',
-              type: 'text',
-            },
-            {
-              id: 'number_from_form',
-              placeholder: 'Number input',
-              type: 'number',
-            },
-            {
-              id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
-              type: 'checkbox',
-            },
-          ],
-          button: 'Next',
-        },
-
-        // video
-        {
-          media: {
-            type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
-            poster: import('./assets/img/spongebob_poster.webp'),
-            style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'Videos',
-          description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
-        },
-
-        // list
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Lists',
-          description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
+          title: '_s2.title',
           list: [
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/guide.svg'),
-                size: 30,
+                src: import('./assets/icons/smile.svg'),
               },
-              text: 'Some cool feature',
+              text: '_s2.list1',
             },
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/track.svg'),
-                size: 30,
+                src: import('./assets/icons/learn.svg'),
               },
-              text: 'Some very cool feature',
+              text: '_s2.list2',
             },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/play.svg'),
+              },
+              text: '_s2.list3',
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/book.svg'),
+              },
+              text: '_s2.list4',
+            },
+          ],
+          button: '_s2.button',
+        },
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/shpooky_easy.tgs'),
+          },
+          title: '_s3.title',
+          description: '_s3.description',
+          list: [
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/count_1.svg'),
+              },
+              text: '_s3.list1',
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/count_2.svg'),
+              },
+              text: '_s3.list2',
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/count_3.svg'),
+              },
+              text: '_s3.list3',
+            },
+          ],
+          button: '_s3.button',
+        },
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/shpooky_speed.tgs'),
+          },
+          title: '_s4.title',
+          list: [
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/time.svg'),
-                size: 30,
               },
-              text: 'Some extremely cool feature',
+              text: '_s4.list1',
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/play.svg'),
+              },
+              text: '_s4.list2',
             },
           ],
-          button: 'Next',
+          button: '_s4.button',
         },
-
-        // "everything is customizable" slide
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
-            size: 250,
+            type: 'image',
+            src: import('./assets/img/colorful.png'),
+            webp: import('./assets/img/colorful.webp'),
+            style: 'aspect-ratio: 375/250',
           },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Everything is customizable',
-          description: '',
-          textAlign: 'center',
-          list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
-          ],
-          button: 'Super-Duper Next',
+          title: '_s5.title',
+          description: '_s5.description',
+          button: '_s5.button',
         },
-
-        // slide with other features
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_cool.tgs'),
-            size: 150,
+            type: 'image',
+            src: import('./assets/img/unicorn.png'),
+            webp: import('./assets/img/unicorn.webp'),
+            style: 'aspect-ratio: 375/209',
           },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Some other features:',
-          description: '',
-          list: [
-            'One-click 0$ <b>deploy</b> on GitHub Pages',
-            'Language and currency localization',
-            'Buttons with <b>haptic</b> feedback',
-            'Content pre-loading for high speed',
-            '<b>Low-code</b> approach to building onboardings',
-            'Many examples/presets',
-            "And many more... (see <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>GitHub</a>)",
-          ],
-          button: 'Next',
-        },
-
-        // go to paywall slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_knife.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          textAlign: 'center',
-          title: 'But onboarding slides are not enough...',
-          description: "Let's go to Paywall",
+          title: '_s6.title',
+          description: '_s6.description',
           button: {
-            content: 'Go to Paywall',
-            to: '/paywall',
+            content: '_s6.button',
+            to: '/story',
           },
+        },
+        {
+          extends: 'paywall',
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/shpooky_party.tgs'),
+          },
+          title: '_paywall.title',
+          mainButtonText: '_paywall.main',
+          list: ['_paywall.feature1', '_paywall.feature2', '_paywall.feature3'],
+          products: [
+            {
+              id: 'monthly',
+              title: '_paywall.product1',
+              description: '_paywall.price1Text',
+              price: '_paywall.product1Price',
+            },
+            {
+              id: 'yearly',
+              title: '_paywall.product2',
+              description: '_paywall.price2Text',
+              price: '_paywall.product2Price',
+              discount: '_paywall.discount',
+            },
+          ],
+          popup: {
+            type: 'web',
+            title: '_paywall.popup.title',
+          },
+          links: [
+            {
+              text: '_paywall.policy',
+              href: '_paywall.policy_href',
+            },
+            {
+              text: '_paywall.terms',
+              href: '_paywall.terms_href',
+            },
+          ],
         },
       ],
     },
-
-    // paywall
     {
-      extends: 'paywall',
-      path: '/paywall',
-      media: {
-        type: 'sticker',
-        src: import('./assets/stickers/duck_money.tgs'),
-        size: 150,
-      },
-      shape: 'square',
-      title: 'Your beautiful Paywall',
-      list: [
-        'Adjustable product cards',
-        '<b>👛 Wallet Pay</b> and <b>Telegram Payments</b> ready. Add custom methods easily',
-        'Subscriptions or One-time payments',
-      ],
-      products: [
-        {
-          id: '1_month_subscription',
-          title: '1 month subscription',
-          description: '2$/month',
-          discount: '',
-          price: 2,
-        },
-        {
-          id: '1_year_subscription',
-          title: '1 year subscription',
-          description: '1$/month',
-          discount: 'Discount 50%',
-          price: 12,
-        },
-        {
-          id: 'lifetime_access',
-          title: 'Lifetime access',
-          description: '20$ once',
-          discount: 'Best offer',
-          price: 20,
-        },
-      ],
-      mainButtonText: 'Buy for {price}',
-      popup: {
-        // popup for payment methods choice
-        type: 'web',
-      },
-      links: [
-        {
-          text: 'Privacy policy',
-          href: 'https://google.com',
-        },
-        {
-          text: 'Terms of use',
-          href: 'https://google.com',
-        },
-      ],
+      extends: 'story',
+      path: '/story',
     },
   ],
 });

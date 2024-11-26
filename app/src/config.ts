@@ -104,14 +104,17 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
+            src: import('./assets/stickers/longcat.tgs'),
             size: 150,
           },
           shape: 'square',
           pagination: 'count',
           title: 'Lists',
           description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
+            'Stay connected with us on: <br> ' +
+            '<a href="https://x.com/NANEEpump_SOL" target="_blank">🐦 Twitter</a>, ' +
+            '<a href="https://naneepump.com/" target="_blank">🌐 Website</a>, ' +
+            '<a href="https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml" target="_blank">📊 DexScreener</a>.',
           list: [
             {
               media: {
@@ -119,7 +122,7 @@ export default defineConfig({
                 src: import('./assets/icons/guide.svg'),
                 size: 30,
               },
-              text: 'Some cool feature',
+              text: '<a href="https://x.com/NANEEpump_SOL" target="_blank">Follow us on Twitter 🐦</a>',
             },
             {
               media: {
@@ -127,7 +130,7 @@ export default defineConfig({
                 src: import('./assets/icons/track.svg'),
                 size: 30,
               },
-              text: 'Some very cool feature',
+              text: '<a href="https://naneepump.com/" target="_blank">Visit our Website 🌐</a>',
             },
             {
               media: {
@@ -135,32 +138,15 @@ export default defineConfig({
                 src: import('./assets/icons/time.svg'),
                 size: 30,
               },
-              text: 'Some extremely cool feature',
+              text: '<a href="https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml" target="_blank">Check us out on DexScreener 📊</a>',
             },
           ],
           button: 'Next',
         },
+        
 
-        // "everything is customizable" slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Everything is customizable',
-          description: '',
-          textAlign: 'center',
-          list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
-          ],
-          button: 'Super-Duper Next',
-        },
-
+       
+        
         // slide with other features
         {
           media: {

@@ -10,8 +10,8 @@ export default defineConfig({
         {
 
           media: {
-            type: 'image',
-            src: import('./assets/img/naneedp.webp'),
+            type: 'video',
+            src: import('./assets/videos/intovid.mp4'),
             size: 350,
           },
           shape: 'square',
@@ -65,34 +65,7 @@ export default defineConfig({
         
 
 
-        {
-          media: {
-            type: 'image',
-            src: import('./assets/img/onboarding_3.webp'),
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'HERE TO STAY!',
-          description:
-            "The 🐶 Dogs, 🐱 Cats, 🐸 Frogs, 🐷 Pigs, 🐒 Monkeys, 🦛 Hippos, and 🐔 Chickens will now be well-behaved,because the magic-wand-waving 🧚‍♀️✨ Fairy Sun Goddess ☀️ is Here.",
-          button: 'Next',
-        },
-
-
-        {
-          media: {
-            type: 'image',
-            src: import('./assets/img/naneedp.webp'),
-        
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'GLOBAL?',
-          description:
-            "The Ultimate Solana Memecoin is here. The Fairy takes centre stage.The SOLANA ecosystem will never be the same again.",
-          button: 'Next',
-        },
-
+      
        
         // video
         {

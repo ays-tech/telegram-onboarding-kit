@@ -144,7 +144,7 @@ export default defineConfig({
             "Exciting things are on the way for our community! 🎉<br><br>" + 
             "We're gearing up to launch a mini app based entirely on the NANEE ecosystem. 🌟<br><br>" +
             "Stay tuned and follow our handles to be the first to know about updates and exclusive features! 🚀",
-            button: 'Next',        },
+            button: 'ALL DONE',        },
         
       ],
     },

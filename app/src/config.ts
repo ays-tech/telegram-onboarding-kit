@@ -8,20 +8,23 @@ export default defineConfig({
       slides: [
         // intro
         {
-
           media: {
             type: 'video',
             src: import('./assets/videos/intovid.mp4'),
-            size: 350,
+            style: 'width: 100%; height: auto;'
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Hello there!,',
+          title: 'Hello there!',
           description:
-            "I AM NANEE PUMPTHE ANCIENT FAIRY SUN GODDESS 🌞 YOU CAN CALL ME 💸 NANEE",
-            button: 'Next',
+            "I AM NANEE PUMP, THE ANCIENT FAIRY SUN GODDESS 🌞<br>You can call me 💸 NANEE.<br><br>" +
+            "Find out more:<br>" +
+            "<a href='https://x.com/NANEEpump_SOL' target='_blank'>🐦 Twitter</a><br>" +
+            "<a href='https://naneepump.com/' target='_blank'>🌐 Website</a><br>" +
+            "<a href='https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml' target='_blank'>📊 DexScreener</a>",
+          button: 'Next',
         },
-
+        
         // image
         {
           media: {

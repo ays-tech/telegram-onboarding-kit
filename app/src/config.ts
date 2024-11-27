@@ -10,15 +10,15 @@ export default defineConfig({
         {
 
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/sunmoon.tgs'),
+            type: 'image',
+            src: import('./assets/img/naneedp.webp'),
             size: 350,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Hi there!',
+          title: 'Hello there!,',
           description:
-            "I AM 🌟 NANEE PUMP ✨<br><br>THE ANCIENT FAIRY 🧚‍♀️ SUN GODDESS 🌞<br><br>YOU CAN CALL ME 💸 NANEE 💖",
+            "I AM NANEE PUMPTHE ANCIENT FAIRY SUN GODDESS 🌞 YOU CAN CALL ME 💸 NANEE",
             button: 'Next',
         },
 
@@ -39,7 +39,7 @@ export default defineConfig({
         {
           media: {
             type: 'image',
-            src: import('./assets/img/onboarding_two.webp'),
+            src: import('./assets/img/naneetwo.jpg'),
           },
           shape: 'rounded',
           pagination: 'count',
@@ -98,8 +98,8 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/img/final_onbording.gif'),
-            poster: import('./assets/img/final_onbording.gif'),
+            src: import('./assets/img/final_onbording.webp'),
+            poster: import('./assets/img/final_onbording.webp'),
             style: 'aspect-ratio: 780/936', // here we manually set video aspect-ratio (default is 16:9)
           },
           shape: 'rounded',
@@ -156,8 +156,8 @@ export default defineConfig({
 
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_knife.tgs'),
+            type: 'image',
+            src: import('./assets/img/nannepic.jpg'),
             size: 250,
           },
           shape: 'square',

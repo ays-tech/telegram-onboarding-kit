@@ -105,9 +105,9 @@ export default defineConfig({
 
         {
           media: {
-            type: 'image',
-            src: import('./assets/img/snoosleep.webp'),
-            size: 250,
+            type: 'sticker',
+            src: import('./assets/stickers/workingsnoo.tgs'),
+            
           },
           shape: 'square',
           pagination: 'count',

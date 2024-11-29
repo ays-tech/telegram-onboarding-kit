@@ -24,10 +24,10 @@ export default defineConfig({
         // image
         {
           media: {
-            type: 'image',
-            src: import('./assets/img/snoosleep.webp'),
+            type: 'sticker',
+            src: import('./assets/stickers/snooanim.tgs'),
           },
-          shape: 'rounded',
+          shape: 'square',
           pagination: 'count',
           title: 'WHO IS SNOO?',
           description:
@@ -73,10 +73,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'Stay Connected',
           description:
-            'Join the SnooCrew: <br> ' +
-            '<a href="https://x.com/coinsnoo" target="_blank">🐦 Twitter</a>, ' +
-            '<a href="#" target="_blank">🌐 Website(coming soon)</a>, ' +
-            '<a href="#" target="_blank">📊 DexScreener(coming soon)</a>.',
+            'Join the SnooCrew: <br> ',
           list: [
             {
               media: {

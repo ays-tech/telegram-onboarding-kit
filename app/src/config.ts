@@ -1,7 +1,7 @@
 import { defineConfig } from '@tok/generation';
 
 export default defineConfig({
-  // If you want to add language/currency localization – see ./examples/meditation as reference
+  // Localization options can be added if needed in the future
 
   pages: [
     {
@@ -9,98 +9,74 @@ export default defineConfig({
         // intro
         {
           media: {
-            type: 'video',
-            src: import('./assets/videos/intovid.mp4'),
-            style: 'width: 100%; height: auto;'
+            type: 'image',
+            src: import('./assets/img/snoosleep.webp'),
+           
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Hello there!',
+          title: 'Hello',
           description:
-            "I AM NANEE PUMP, THE ANCIENT FAIRY SUN GODDESS 🌞<br>You can call me 💸 NANEE.<br><br>" +
-            "Find out more:<br>" +
-            "<a href='https://x.com/NANEEpump_SOL' target='_blank'>🐦 Twitter</a><br>" +
-            "<a href='https://naneepump.com/' target='_blank'>🌐 Website</a><br>" +
-            "<a href='https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml' target='_blank'>📊 DexScreener</a>",
+            "I AM SNOO, THE CHILL MEME COIN THAT BRINGS GAINS WHILE YOU RELAX! 💤<br>Call me SNOO.<br><br>" ,
           button: 'Next',
         },
-        
+
         // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/onboarding_two.webp'),
+            src: import('./assets/img/snoosleep.webp'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'WHO IS NANEE PUMP',
+          title: 'WHO IS SNOO?',
           description:
-            "NANEE PUMP enters the SOLANA Ecosystem via moonshot to babysit and keep the House of Memes in order,<br> by ensuring everyone is well behaved and performing above market standards.<br><br>",
+            "Snoo is the laziest, cutest, and most profitable meme coin in the Solana ecosystem. 💤<br>Our mascot inspires everyone to chill, hold, and enjoy the ride to the moon! 🌙",
           button: 'Next',
         },
 
         {
           media: {
             type: 'image',
-            src: import('./assets/img/naneetwo.jpg'),
+            src: import('./assets/img/relaxsnoo.webp'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'WHERE IS SHE?',
+          title: 'WHERE DOES SNOO CHILL?',
           description:
-            "The Ancient Fairy Sun goddess resides in the Solar Kingdom and oversees the entire Sol meme-sphere with a touch of her fairy energy.",
+            "Snoo resides in the Relaxation Realm, a land where degens can unwind and watch their wallets grow through the magical Snore Tax. 🌞💤",
           button: 'Next',
         },
 
-
-        {
-          media: {
-            type: 'image',
-            src: import('./assets/img/buringman.webp'),
-          },
-          shape: 'rounded',
-          pagination: 'count',
-          title: 'BurningMen',
-          description: 
-            "The developer burned 40% of the total supply, boosting scarcity and value for the community. 🔥",
-          button: 'Next',
-        },
         
 
-
-      
-       
         // video
         {
           media: {
-            type: 'video',
-            src: import('./assets/img/final_onbording.webp'),
-            poster: import('./assets/img/final_onbording.webp'),
-            style: 'aspect-ratio: 780/936', // here we manually set video aspect-ratio (default is 16:9)
+            type: 'image',
+            src: import('./assets/img/snoomoon.webp'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'LFG',
-          description:
-            "Hope you are ready for whats coming?",
+          title: 'Are You Ready?',
+          description: 'Buckle up! SnooCoin is here to take you to the moon while you chill. 🚀💤',
           button: 'Next',
         },
 
         // list
         {
           media: {
-            type: 'sticker',
-            src: import('./assets/stickers/longcat.tgs'),
-            size: 150,
+            type: 'image',
+            src: import('./assets/img/snoosocial.webp'),
           },
           shape: 'square',
           pagination: 'count',
-          title: 'lets connect',
+          title: 'Stay Connected',
           description:
-            'Stay connected with us on: <br> ' +
-            '<a href="https://x.com/NANEEpump_SOL" target="_blank">🐦 Twitter</a>, ' +
-            '<a href="https://naneepump.com/" target="_blank">🌐 Website</a>, ' +
-            '<a href="https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml" target="_blank">📊 DexScreener</a>.',
+            'Join the SnooCrew: <br> ' +
+            '<a href="https://x.com/coinsnoo" target="_blank">🐦 Twitter</a>, ' +
+            '<a href="#" target="_blank">🌐 Website(coming soon)</a>, ' +
+            '<a href="#" target="_blank">📊 DexScreener(coming soon)</a>.',
           list: [
             {
               media: {
@@ -108,7 +84,7 @@ export default defineConfig({
                 src: import('./assets/icons/guide.svg'),
                 size: 30,
               },
-              text: '<a href="https://x.com/NANEEpump_SOL" target="_blank">Follow us on Twitter 🐦</a>',
+              text: '<a href="https://x.com/coinsnoo" target="_blank">Follow us on Twitter 🐦</a>',
             },
             {
               media: {
@@ -116,7 +92,7 @@ export default defineConfig({
                 src: import('./assets/icons/track.svg'),
                 size: 30,
               },
-              text: '<a href="https://naneepump.com/" target="_blank">Visit our Website 🌐</a>',
+              text: '<a href="https://snoocoin.com/" target="_blank">Visit our Website 🌐</a>',
             },
             {
               media: {
@@ -124,7 +100,7 @@ export default defineConfig({
                 src: import('./assets/icons/time.svg'),
                 size: 30,
               },
-              text: '<a href="https://dexscreener.com/solana/gvkx1brjdakwcv57q6a8ajljtbb9ktjxvfesgvopjxml" target="_blank">Check us out on DexScreener 📊</a>',
+              text: '<a href="#" target="_blank">Track us on DexScreener(coming soon) 📊</a>',
             },
           ],
           button: 'Next',
@@ -133,21 +109,18 @@ export default defineConfig({
         {
           media: {
             type: 'image',
-            src: import('./assets/img/nannepic.jpg'),
+            src: import('./assets/img/snoosleep.webp'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
           textAlign: 'center',
-          title: 'Big Things Are Coming Soon... 🚀',
-          description: 
-            "Exciting things are on the way for our community! 🎉<br><br>" + 
-            "We're gearing up to launch a mini app based entirely on the NANEE ecosystem. 🌟<br><br>" +
-            "Stay tuned and follow our handles to be the first to know about updates and exclusive features! 🚀",
-            button: 'ALL DONE',        },
-        
+          title: 'Exciting Times Ahead... 🚀',
+          description:
+            "SnooCoin is just getting started! 🎉<br><br>Exciting developments are on the horizon that will take SnooCoin to the next level. 🌟<br><br>Stay tuned for updates and be the first to access exclusive new features that will delight and surprise our community! 🚀",
+          button: 'ALL DONE',
+        },
       ],
     },
-    
   ],
 });

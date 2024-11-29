@@ -31,7 +31,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'WHO IS SNOO?',
           description:
-            "Snoo is the laziest, cutest, and most profitable meme coin in the Solana ecosystem. 💤<br>Our mascot inspires everyone to chill, hold, and enjoy the ride to the moon! 🌙",
+          "Snoo is the laziest, cutest, and most profitable meme coin in the Solana ecosystem. 💤<br>Our lovable mascot Snoo inspires holders to relax, enjoy the journey, and aim for the stars. While Snoo isn’t promising moonshots or instant riches, the magic of holding could lead to incredible opportunities down the line. 🌙✨<br>Chill, hold, and see where Snoo’s cosmic energy takes you—because those who stay for the ride often find themselves winning big!",
           button: 'Next',
         },
 
@@ -89,7 +89,7 @@ export default defineConfig({
                 src: import('./assets/icons/track.svg'),
                 size: 30,
               },
-              text: '<a href="https://snoocoin.com/" target="_blank">Visit our Website 🌐</a>',
+              text: '<a href="#" target="_blank">website(coming soon)</a>',
             },
             {
               media: {
@@ -97,7 +97,7 @@ export default defineConfig({
                 src: import('./assets/icons/time.svg'),
                 size: 30,
               },
-              text: '<a href="#" target="_blank">Track us on DexScreener(coming soon) 📊</a>',
+              text: '<a href="#" target="_blank">DexScreener(coming soon) 📊</a>',
             },
           ],
           button: 'Next',
